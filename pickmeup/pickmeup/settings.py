@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.0/ref/settings/
 """
 
 import os
-
+from . import sensitive_settings
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -121,3 +121,5 @@ STATIC_URL = '/static/'
 
 SLACK_CLIENT_ID="328583755312.330295355239"
 VERIFY_TOKEN = "D0thZBDaP4HFMxBb85KJmj2Q"
+
+TONE_THRESHOLD = .75
